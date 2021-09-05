@@ -1,10 +1,62 @@
----
-title: DOYOGA
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<section class="mb-4 mb-lg-5">
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOYOGA</title>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'gzm7sss',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker-bs4.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body class="scroll--none">
+
+  <header class="bg-light pos-sticky w-100 top-0 z-500">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light py-0">
+        <div class="container-fluid">
+          <a class="navbar-brand d-block overflow-hidden wh-nowrap bg-cover bg-no-repeat logo logo--primary" href="index.html">DOYOGA</a>
+          <button class="navbar-toggler py-2.25" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0">
+            <ul class="navbar-nav gap-2">
+              <li class="nav-item">
+                <a class="nav-link link-dark link--underline--dark fw-light p-2.5 fs-5 fs-lg-bs" href="course.html">課程介紹</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark link--underline--dark fw-light p-2.5 fs-5 fs-lg-bs" href="surroundings.html">瑜珈空間</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-dark link--underline--dark fw-light p-2.5 fs-5 fs-lg-bs" href="curriculum.html">當月課表</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse flex-grow-0 py-2.5">
+            <div class="d-flex gap-2 ">
+            <a class="btn rounded-bs btn-outline-secondary text-light-hover text-opacity-100 w-100 fs-5 fs-lg-bs" href="reservation.html">立即預約</a>
+            <a class="btn rounded-bs btn-outline-secondary text-light-hover text-opacity-100 w-100 fs-5 fs-lg-bs" href="contact.html">聯絡我們</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+    <main class="pos-relative">
+      <section class="mb-4 mb-lg-5">
   <div class="pos-absolute w-100 hero hero--clip">
     <img src="./assets/images/photo-1612157777902-5382bc6e864b.jpeg" class="pos-fixed top-0 object-cover object-bottom w-100 h-100 hero heroImg" data-lax-use-gpu="true" alt="">
   </div>
@@ -445,3 +497,55 @@ current: index
     </div>
   </div>
 </section>
+    <div class="pos-fixed top-50 end-0 translate-middle z-500">
+      <ul class="d-none d-xl-flex flex-column justify-between list-unstyled">
+        <li class="gap-1 link__icon"><a href="#" class="display-5 link-secondary"><i class="fab fa-facebook"></i></a></li>
+        <li class="gap-1 link__icon"><a href="#" class="display-5 link-secondary"><i class="fab fa-instagram"></i></a></li>
+        <li class="gap-1 link__icon"><a href="#" class="display-5 link-secondary"><i class="fab fa-line"></i></a></li>
+      </ul>
+    </div>
+    </main>
+
+    <footer class="pt-3 pb-4 bg-secondary">
+      <section class="container mb-3">
+      <div class="row items-lg-center">
+        <div class="col-md-6">
+          <h2 class="text-white fs-4 fw-regular mb-1">現在訂閱，獲得課程優惠碼！</h2>
+        </div>
+        <div class="col-md-6 offset-lg-2 col-lg-4">
+          <div class="input-group">
+            <input type="email" class="form-control ph-secondary" placeholder="輸入您的電子信箱" />
+            <button class="btn btn-primary text-light" type="button">訂閱</button>
+          </div>
+        </div>
+      </div>
+      </section>
+      <div class="border-bottom border-white mb-3"></div>
+      <section class="container">
+        <div class="d-flex flex-wrap justify-between">
+          <ul class="col-6 col-md-4 order-1 d-flex justify-between flex-column gap-1 list-unstyled mb-1 mb-md-0">
+            <h2 class=""><a href="index.html" class="d-block overflow-hidden wh-nowrap bg-cover bg-no-repeat logo logo--white">DOTOGA</a></h2>
+            <li><a href="course.html" class="link-white link--underline--white fw-light">課程介紹</a></li>
+            <li><a href="surroundings.html" class="link-white link--underline--white fw-light">瑜珈空間</a></li>
+            <li><a href="curriculum.html" class="link-white link--underline--white fw-light">當月課表</a></li>
+          </ul>
+          <div class="col-12 col-md-4 order-3 order-md-2 col-12 text-white self-end">© 2021. All Rights Reserved.</div>
+          <div class="col-6 col-md-4 order-2 order-md-3 d-flex justify-end gap-1 list-unstyled">
+            <a href="#" class="link-white link__icon">
+              <i class="fab fa-facebook fs-4"></i>
+            </a>
+            <a href="#" class="link-white link__icon">
+              <i class="fab fa-instagram fs-4"></i>
+            </a>
+            <a href="#" class="link-white link__icon">
+              <i class="fab fa-line fs-4"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
