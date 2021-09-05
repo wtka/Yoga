@@ -1,0 +1,21 @@
+.breadcrumb {
+  @include make-row();
+  &-item {
+    &::before{
+      float: none !important;
+      content: '' !important;
+    }
+    text-align: center;
+    border-radius: 1rem;
+    background-color: $light;
+    color: $secondary;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .active {
+    background-color: $secondary;
+    color: $white;
+  }
+}
